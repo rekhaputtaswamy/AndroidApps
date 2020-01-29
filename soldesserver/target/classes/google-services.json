@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "858307811538",
+    "firebase_url": "https://soldesapp-bb0df.firebaseio.com",
+    "project_id": "soldesapp-bb0df",
+    "storage_bucket": "soldesapp-bb0df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858307811538:android:7879b2af6b8fea3d",
+        "android_client_info": {
+          "package_name": "com.epita.soldes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858307811538-o2l5cgd4vu3dujmv3hkuob9a87g6pitv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.epita.soldes",
+            "certificate_hash": "b8e16a30de01dd1ee18a89a288d356878c031686"
+          }
+        },
+        {
+          "client_id": "858307811538-mscqre52r0648iccricsntjbkp2gm897.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAutKE4ZCcmeOzFakOmWHHUfjoH1cAuC-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858307811538-mscqre52r0648iccricsntjbkp2gm897.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
