@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/custom_alert">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout android:id="@+id/amount_layout"
+            android:layout_width="74dp"
+            android:layout_height="80dp"
+            android:background="@drawable/custom_rupee_layout"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/amount"/>
+        </RelativeLayout>
+
+        <TextView android:id="@+id/alert_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/amount_layout"
+            android:textColor="#2a2e43"
+            android:text="@string/payment"
+            android:textSize="14sp"/>
+
+        <TextView android:id="@+id/rupee"
+            android:layout_width="15dp"
+            android:layout_height="15.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/amount_layout"
+            android:layout_below="@id/alert_text"
+            android:textColor="#12cb50"
+            android:text="@string/rupee_sym"
+            android:textSize="14sp"/>
+
+        <TextView android:id="@+id/rupee_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/rupee"
+            android:layout_below="@id/alert_text"
+            android:textColor="#12cb50"
+            android:text="@string/rupee_val"
+            android:textSize="24sp"/>
+
+        <Button android:id="@+id/confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/rupee_txt"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/amount_layout"
+            android:text="@string/confirm_txt"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/gradient_button"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

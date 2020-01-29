@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/cardview_light_background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationLabel"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Select Pickup and Drop off"/>
+
+    <fragment
+        android:id="@+id/source_autocomplete_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@id/locationLabel"
+        android:layout_height="wrap_content"
+         />
+
+    <fragment
+        android:id="@+id/destination_autocomplete_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="-15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/source_autocomplete_fragment"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toleranceLabel"
+        android:textSize="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@id/destination_autocomplete_fragment"
+        android:text="0 Meters Tolerance"/>
+
+    <com.rey.material.widget.Slider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toleranceInput"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_below="@id/toleranceLabel"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/routesLabel"
+        android:textSize="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@id/toleranceInput"
+        android:text="Routes"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/routeslistview"
+        android:layout_below="@id/routesLabel"></ListView>
+
+
+
+</RelativeLayout>

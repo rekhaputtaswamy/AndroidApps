@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_landing_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".TestActivity" />
+
+    <ImageView
+        android:id="@+id/bottombg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bottom_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/sos_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottombg"
+        app:layout_constraintStart_toStartOf="@+id/bottombg"
+        app:srcCompat="@drawable/sos" />
+
+    <ImageView
+        android:id="@+id/nav_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottombg"
+        app:layout_constraintEnd_toEndOf="@+id/bottombg"
+        app:srcCompat="@drawable/navigation" />
+
+    <ImageView
+        android:id="@+id/trip_track_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottombg"
+        app:layout_constraintEnd_toStartOf="@+id/call_me_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottombg"
+        app:srcCompat="@drawable/ic_trip_tracking" />
+
+    <ImageView
+        android:id="@+id/call_me_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottombg"
+        app:layout_constraintEnd_toStartOf="@+id/chat_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/trip_track_btn"
+        app:layout_constraintTop_toTopOf="@+id/bottombg"
+        app:layout_constraintVertical_bias="0.508"
+        app:srcCompat="@drawable/ic_call_me" />
+
+    <ImageView
+        android:id="@+id/chat_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottombg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/call_me_btn"
+        app:layout_constraintTop_toTopOf="@+id/bottombg"
+        app:srcCompat="@drawable/ic_chat" />
+
+    <TextView
+        android:id="@+id/track_trip_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:lineHeight="15sp"
+        android:lineSpacingExtra="3sp"
+        android:text="Track My Trip"
+        android:textColor="#454f63"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottombg"
+        app:layout_constraintEnd_toEndOf="@+id/trip_track_btn"
+        app:layout_constraintStart_toStartOf="@+id/trip_track_btn"
+        app:layout_constraintTop_toBottomOf="@+id/trip_track_btn" />
+
+    <TextView
+        android:id="@+id/call_me_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:lineHeight="15sp"
+        android:lineSpacingExtra="3sp"
+        android:text="Call Me"
+        android:textColor="#454f63"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottombg"
+        app:layout_constraintEnd_toEndOf="@+id/call_me_btn"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="@+id/call_me_btn"
+        app:layout_constraintTop_toBottomOf="@+id/call_me_btn" />
+
+    <TextView
+        android:id="@+id/chat_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:lineHeight="15sp"
+        android:lineSpacingExtra="3sp"
+        android:text="Text Me"
+        android:textColor="#454f63"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottombg"
+        app:layout_constraintEnd_toEndOf="@+id/chat_btn"
+        app:layout_constraintStart_toStartOf="@+id/chat_btn"
+        app:layout_constraintTop_toBottomOf="@+id/chat_btn" />
+
+    <ImageView
+        android:id="@+id/headerbg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map"
+        app:srcCompat="@drawable/header_block" />
+
+    <ImageView
+        android:id="@+id/hamburger_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/sos_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu_icon" />
+
+    <TextView
+        android:id="@+id/user_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:lineHeight="25sp"
+        android:lineSpacingExtra="5sp"
+        android:text="Hi Akila!"
+        android:textColor="#2a2e43"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/hamburger_menu"
+        app:layout_constraintTop_toTopOf="@+id/headerbg" />
+
+    <ImageView
+        android:id="@+id/review_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/headerbg"
+        app:layout_constraintTop_toTopOf="@+id/headerbg"
+        app:srcCompat="@drawable/ic_review" />
+
+
+</android.support.constraint.ConstraintLayout>

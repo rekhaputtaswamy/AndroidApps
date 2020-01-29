@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/off_cab_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_rectangle_1">
+
+    <Button
+        android:id="@+id/office_cab_header"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="#e9e9e9"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/trip_track_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/trip_track"
+        android:textColor="#2a2e43"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/office_cab_header" />
+
+    <ImageView
+        android:id="@+id/office_cab_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trip_track_txt"
+        app:srcCompat="@drawable/office_cab_icon" />
+
+    <TextView
+        android:id="@+id/off_cab_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/office_cab"
+        android:textColor="#83899e"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/office_cab_img"
+        app:layout_constraintTop_toBottomOf="@+id/trip_track_txt" />
+
+    <TextView
+        android:id="@+id/from_off_cab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/from"
+        android:textColor="#2a2e43"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/office_cab_img" />
+
+    <TextView
+        android:id="@+id/to_off_cab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/source_sans_pro_semibold"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/to"
+        android:textColor="#2a2e43"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/from_off_cab"
+        app:layout_constraintTop_toBottomOf="@+id/off_cab_txt" />
+
+    <EditText
+        android:id="@+id/from_etext"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from_off_cab" />
+
+    <EditText
+        android:id="@+id/to_etext"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:gravity="end"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/from_etext"
+        app:layout_constraintTop_toBottomOf="@+id/to_off_cab" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="6sp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/office_cab_checkbox"
+        android:textColor="#83899e"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_etext" />
+
+    <Button
+        android:id="@+id/off_cab_nextbtn"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ic_button_grey"
+        android:fontFamily="@font/source_sans_pro_regular"
+        android:lineSpacingExtra="4sp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+</android.support.constraint.ConstraintLayout>

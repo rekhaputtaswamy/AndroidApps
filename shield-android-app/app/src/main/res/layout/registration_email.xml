@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/email_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/email_text"
+            android:textColor="#de4d9a"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/email_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_txt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/email_msg"
+            android:textColor="#83899e"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_msg"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginRight="20dp"
+            android:lineSpacingExtra="4sp"
+            android:fontFamily="@font/source_sans_pro_regular"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:paddingBottom="18dp"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textSize="16sp"
+            android:textColor="@color/gray_text"
+            app:backgroundTint="@color/light_gray" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

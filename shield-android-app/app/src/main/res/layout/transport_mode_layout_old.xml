@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_landing_page"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_rectangle_1">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#e9e9e9"
+        app:layout_constraintBottom_toTopOf="@+id/trip_track_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/trip_track_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_trip_tracking"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_scroll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/mode_of_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:lineSpacingExtra="5sp"
+        android:textColor="#2a2e43"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/trip_track_img"
+        app:layout_constraintTop_toTopOf="@+id/trip_track_img"
+        android:text="@string/trip_track" />
+
+    <TextView
+        android:id="@+id/mode_of_trans_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#83899e"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/mode_of_trans"
+        app:layout_constraintTop_toBottomOf="@+id/mode_of_trans"
+        android:text="@string/select_mode" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trip_track_img">
+
+        <LinearLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/modes_own_vehicle"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/own"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/ic_rectangle_1"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:id="@+id/own_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/own_vechicle_icon"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/own_img"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#83899e"
+                    android:textSize="12sp"
+                    android:text="@string/own_vehicle" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/modes_taxi"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/taxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/ic_rectangle_1"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:id="@+id/taxi_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/cab_icon"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/taxi_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#83899e"
+                    android:textSize="12sp"
+                    android:text="@string/taxi" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/modes_office_cab"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/office_cab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/ic_rectangle_1"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:id="@+id/office_cab_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/office_cab_icon"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/office_cab_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#83899e"
+                    android:textSize="12sp"
+                    android:text="@string/office_cab" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/modes_bus"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/bus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/ic_rectangle_1"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:id="@+id/bus_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/bus_icon"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/bus_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#83899e"
+                    android:textSize="12sp"
+                    android:text="@string/bus" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/modes_auto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/ic_rectangle_1"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:id="@+id/auto_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/auto_icon"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/auto_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#83899e"
+                    android:textSize="12sp"
+                    android:text="@string/auto" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/nextbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_button_grey"
+        android:lineSpacingExtra="4sp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_scroll"
+        android:text="@string/next_txt" />
+
+</android.support.constraint.ConstraintLayout>

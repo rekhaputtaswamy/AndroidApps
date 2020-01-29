@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Shield</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="signin">Enter your mobile number to get started</string>
+    <string name="signup">Sign up</string>
+    <string-array name="profession_dropdown_arrays">
+        <item>Profession</item>
+        <item>Doctor</item>
+        <item>Engineer</item>
+        <item>Lawyer</item>
+    </string-array>
+
+    <string-array name="birthyear_dropdown_arrays">
+        <item>Birth Year</item>
+    </string-array>
+    <string name="sign_up_text">Give us something we can identify you with.</string>
+    <string name="sign_up_msg">Just so we don’t confuse you with anybody but you.</string>
+    <string name="surname">Name and Surname</string>
+    <string name="profession">Profession</string>
+    <string name="email_text">Your email id.</string>
+    <string name="email_msg">Cause who writes you letters anymore?</string>
+    <string name="email">Email id</string>
+    <string name="contact_txt">Who’s yours GO - To Person?</string>
+    <string name="contact_msg">Somebody you would want us to inform, if you were in trouble.</string>
+    <string name="contact">Contact Person</string>
+    <string name="pwd_txt">Time to create password.</string>
+    <string name="pwd_msg">Even the CBI can’t crack.</string>
+    <string name="create_pwd">Create Password</string>
+    <string name="retype_pwd">Re Type Password</string>
+    <string name="identify_txt">Give us something we can identify you with.</string>
+    <string name="identify_msg">Cause we are the good guys you call for help.</string>
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="call_me">Call Me</string>
+    <string name="escort">Security Escort</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_landing_page">LandingPageActivity</string>
+    <string name="payment">The estimated amount will be deducted from your wallet only at the end of trip.</string>
+    <string name="your_no">Your Number</string>
+    <string name="sign_up">Sign up</string>
+    <string name="login">Login</string>
+    <string name="via_title">TAP ON THE ROUTE YOU PLAN TO TRAVEL ON</string>
+    <string name="via_txt">Based on your route selection, our smart security system will start tracking your trip and will immediately contact you if there is any deviation from your chosen route </string>
+    <string name="rupee_sym">₹</string>
+    <string name="rupee_val">100</string>
+    <string name="confirm_txt">Confirm</string>
+    <string name="profile_btn_txt">Complete Your Profile</string>
+    <string name="mode_of_transport">Mode of Transport</string>
+    <string name="own_vehicle">Own Vechicle</string>
+    <string name="taxi">Taxi</string>
+    <string name="office_cab">Office Cab</string>
+    <string name="bus">Bus</string>
+    <string name="auto">Auto</string>
+    <string name="bike">Bike</string>
+    <string name="walk">Walking</string>
+    <string name="next_txt">Next</string>
+    <string name="datetime">Planned Time and Date</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="office_cab_checkbox">If you would like to travel through a specific location, please enter the same here.</string>
+    <string name="more_loc">+Add More Location</string>
+    <string name="trip_track">Track My Trip</string>
+    <string name="schedule_a_call">Schedule a Call</string>
+    <string name="schedule">Schedule</string>
+    <string name="date"> Date </string>
+    <string name="time"> Time </string>
+    <string name="freshchat_file_provider_authority">com.shieldapp.shield.provider</string>
+    <string name="text_me">Text Me</string>
+    <string name="select_mode">Select your mode of transport</string>
+</resources>
+
