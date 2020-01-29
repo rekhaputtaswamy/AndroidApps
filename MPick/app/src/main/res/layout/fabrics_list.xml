@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/fabric1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">x
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="40"
+            android:spinnerMode="dropdown"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="20"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/amount1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="30"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_weight="10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/add"
+            android:background="#FFFFFF"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/fabric2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="40"
+            android:spinnerMode="dropdown"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/qty2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="20"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/amount2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="30"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/add2"
+            android:layout_weight="10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/add"
+            android:background="#FFFFFF"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/fabric3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="40"
+            android:spinnerMode="dropdown"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/qty3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="20"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/amount3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="30"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/add3"
+            android:layout_weight="10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/add"
+            android:background="#FFFFFF"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/fabric4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="40"
+            android:spinnerMode="dropdown"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/qty4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="20"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/amount4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="30"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/add4"
+            android:layout_weight="10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/add"
+            android:background="#FFFFFF"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/fabric5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/spinner5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="40"
+            android:spinnerMode="dropdown"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/qty5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="20"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/amount5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="30"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/add5"
+            android:layout_weight="10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/add"
+            android:background="#FFFFFF"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/fabric6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/spinner6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="40"
+            android:spinnerMode="dropdown"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/qty6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="20"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/amount6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="30"
+            android:inputType="number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="5dp"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/add6"
+            android:layout_weight="10"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/add"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+</LinearLayout>
