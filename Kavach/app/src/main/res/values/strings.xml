@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">KavachApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_code">Verfication Code</string>
+    <string name="email_id">Email ID</string>
+    <string name="verify">VERIFY</string>
+    <!-- Cognito pool details here -->
+    <string name="poolid">"eu-central-1_fDGoWqSS1"</string>
+    <string name="clientid">753ha8tqco133gstu3gpbovpn9</string>
+    <string name="client_secret">2rd7s7eem8gmefvu4s1mlh2aso6m3ijrcisceulf9n11cqovje8</string>
+    <string name="full_name">Full name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="register">Register User</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="log_out">Logout</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="forgotpwd"><a href="https://www.google.com/">Forgot Password</a></string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_profile_screen">ProfileScreen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_landing_screen">LandingScreen</string>
+</resources>
