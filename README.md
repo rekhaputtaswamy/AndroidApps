@@ -11,7 +11,7 @@
   The server code is available in the below link.
   AndroidApps/soldesserver/
   
-- LaundryApp to manage laundry for customers
+- LaundryApp called mPick to manage laundry for customers
 
 - ShieldMobApp showing user interface using constraint layout.
   The server side code is maintained by the clients so you can only view the user interfaces i.e., xml files in layout to see   the designs implemented using constraints layout.
